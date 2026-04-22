@@ -1,14 +1,15 @@
 function twoSum(nums , target){
     let map = new Map();
-for(let i = 0 ; i< nums.length; i++){
-    let diff = target - nums[i];
-    if(map.has(diff)){
-        return [map.get(diff) , i];
+    for(let i=0 ; i<nums.length ; i++){
+        let diff = target - nums[i]
+        if(map.has(diff)){
+            return [map.get(diff) ,i]
+        }else{
+            map.set(nums[i] , i);
+        }
     }
-    map.set(nums[i] , i);
+    return -1;
 }
-reurn - 1   ;
-}
-let nums = [2,7,11,15];
+let nums = [15,7,11,2];
 let target = 17;
 console.log(twoSum(nums , target))
