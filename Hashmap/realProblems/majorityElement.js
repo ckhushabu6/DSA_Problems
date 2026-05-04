@@ -15,5 +15,5 @@ function majorityElement(arr){
 }
 
 
-let arr = [3,3,4,2,4,4,4,3,3,3,3 ];
+let arr = [3,3,4,2,4,,3,3,3,3 ];
 console.log(majorityElement(arr));
